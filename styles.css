@@ -6,7 +6,7 @@
 }
 
 .navbar{
-    background: #131313;
+    background: #5350eb;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,8 +30,8 @@
 }
 
 #navbar__logo {
-    background-color: #c95d55;
-    background-image: linear-gradient(to top, #FF0844 0%, #FFb199 100%);
+    background-color: #e6b5b1;
+    background-image: linear-gradient(to top, #fdf4f4 0%, #000000 100%);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
