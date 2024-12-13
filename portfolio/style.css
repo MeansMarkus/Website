@@ -1,13 +1,13 @@
 /* General Styles */
 body {
-    background-image: url('assets/OIP.jpg'); /* Path to your image */
+    background-image: url('assets/OIP2.jpg'); /* Path to your image */
     background-size: cover;  /* Ensure the image covers the entire screen */
     background-position: center center;  /* Center the image */
     background-attachment: fixed;  /* Keep the background fixed when scrolling */
     margin: 0;  /* Remove default margin */
     padding: 0;  /* Remove default padding */
     font-family: Arial, sans-serif; /* Optional: set a default font */
-    color: #fff; /* Optional: set text color to white for contrast */
+    color: #f5f5dc; /* Optional: set text color to white for contrast */
 }
 
 body::before {
@@ -27,7 +27,7 @@ body::before {
     justify-content: space-between;
     padding: 18px 30px;
   
-    color: rgb(255, 255, 255);
+    color: #f5f5dc(255, 255, 255);
 }
 
 .nav-links {
@@ -37,7 +37,7 @@ body::before {
 }
 
 .nav-links a {
-    color: rgb(230, 153, 52);
+    color: #D7722A;
     text-decoration: none;
     font-weight: bold;
 }
@@ -45,14 +45,14 @@ body::before {
 .hero {
     text-align: center;
     
-    color: white;
+    color: #f5f5dc;
     padding: 100px 20px;
 }
 
 .hero .btn {
     padding: 10px 30px;
-    background: white;
-    color: #ff8800;
+    background: #f5f5dc;
+    color: #D7722A;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -89,16 +89,16 @@ body::before {
 .contact-link {
     font-size: 20px;
     text-decoration: none;
-    color: #ffffff; /* White color for links */
+    color: #f5f5dc; /* White color for links */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .contact-link:hover {
-    color: orange; /* Change color to orange when hovered */
+    color: #D7722A; /* Change color to orange when hovered */
 }
 
 .contact-link:active {
-    color: darkorange; /* Dark orange color when the link is clicked */
+    color: #D7722A; /* Dark orange color when the link is clicked */
 }
 
 
@@ -106,7 +106,7 @@ body::before {
 /* Footer Styling */
 footer {
    
-    color: white;
+    color: #f5f5dc;
     text-align: center;
     padding: 10px;
     position: relative;
