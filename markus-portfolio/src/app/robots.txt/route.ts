@@ -1,0 +1,10 @@
+export const runtime = "edge";
+
+export function GET() {
+  const body = `User-agent: *\nAllow: /\nSitemap: https://example.com/sitemap.xml`;
+  return new Response(body, {
+    headers: {
+      "content-type": "text/plain",
+    },
+  });
+}
