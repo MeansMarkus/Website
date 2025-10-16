@@ -1,13 +1,13 @@
 /* General Styles */
 body {
-    background-image: url('assets/OIP2.jpg'); /* Path to your image */
-    background-size: cover;  /* Ensure the image covers the entire screen */
-    background-position: center center;  /* Center the image */
-    background-attachment: fixed;  /* Keep the background fixed when scrolling */
-    margin: 0;  /* Remove default margin */
-    padding: 0;  /* Remove default padding */
-    font-family: Arial, sans-serif; /* Optional: set a default font */
-    color: #f5f5dc; /* Optional: set text color to white for contrast */
+    background-image: url('assets/OIP2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #f5f5dc;
 }
 
 body::before {
@@ -25,9 +25,10 @@ body::before {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 18px 30px;
-  
-    color: #f5f5dc(255, 255, 255);
+    backdrop-filter: blur(6px);
+    color: #f5f5dc;
 }
 
 .nav-links {
@@ -39,22 +40,68 @@ body::before {
 .nav-links a {
     color: #D7722A;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .hero {
     text-align: center;
-    
     color: #f5f5dc;
-    padding: 100px 20px;
+    padding: 120px 20px 80px;
 }
 
-.hero .btn {
-    padding: 10px 30px;
-    background: #f5f5dc;
-    color: #D7722A;
+.hero h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    margin: 0 0 12px;
+}
+
+.subtitle {
+    font-size: clamp(16px, 2.5vw, 22px);
+    color: #eee6cf;
+    margin: 0 0 24px;
+}
+
+.quick-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #f5f5dc33;
+    background: #f5f5dc11;
+    color: #f5f5dc;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn.primary {
+    background: #D7722A;
+    border-color: #D7722A;
+    color: #1a1207;
+}
+
+.btn.outline {
+    background: transparent;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    background: #f5f5dc22;
+    border-color: #f5f5dc66;
 }
 
 .project-grid {
@@ -67,6 +114,10 @@ body::before {
 .project-card img {
     width: 100%;
     border-radius: 10px;
+}
+
+.project-card h2 {
+    margin: 10px 0 6px;
 }
 
 /* Contact Page Section */
@@ -113,4 +164,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+    .nav-links { gap: 10px; }
+    .btn { width: 100%; text-align: center; }
 }
