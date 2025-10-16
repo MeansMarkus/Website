@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Markus Means</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -17,24 +18,43 @@
     </header>
     <main>
         <section class="projects">
-            <h1>My Projects</h1>
+            <h1>Projects</h1>
             <div class="project-grid">
                 <div class="project-card">
-                    
+                    <img src="assets/background.jpg" alt="Watchly: Movie Recommendation Platform">
+                    <h2>Watchly: Movie Recommendation Platform</h2>
+                    <p>Full‑stack movie recommendation app built by a team of 3. Python/Flask backend integrates TMDB API to suggest films based on user preferences and viewing history. Deployed via CI/CD on Railway with Firebase Authentication (email verification) for signup/login and saving personalized lists.</p>
+                    <p><strong>Tech:</strong> Python, Flask, Firebase Auth/Database, TMDB API, HTML/CSS, JavaScript</p>
+                    <a href="https://github.com/MeansMarkus/MoviePicker" target="_blank" class="contact-link">GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/profile.jpg" alt="Japanese AI Tutor – Full‑Stack ML Application">
+                    <h2>Japanese AI Tutor — Full‑Stack ML Application</h2>
+                    <p>Language learning platform with AI conversation practice, vocabulary management, and spaced‑repetition reviews. Built an intelligent conversation system using OpenAI 3.5 Turbo with level‑appropriate responses and an adaptive SRS algorithm informed by performance analytics. Includes a ML pipeline with custom T5 fine‑tuning on 300+ examples.</p>
+                    <p><strong>Tech:</strong> Python, SQL, PyTorch, Transformers (T5), OpenAI API, Streamlit</p>
+                    <a href="https://github.com/MeansMarkus/AI-ML-Japanese-Tutor" target="_blank" class="contact-link">GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
                     <img src="assets/roadtrip.jpg" alt="Road Trip Visualization">
                     <h2>Road Trip Visualization</h2>
-                    <p>Visualized road trip paths and stops using a custom GUI application.</p>
-                    <a href="https://github.com/MeansMarkus/MyProject/blob/main/TripPoint.java" target="_blank" class = "contact-link">View here on GitHub</a>
+                    <p>Visualized road‑trip paths and stops using a custom GUI. Focused on data structures for route representation and interactive exploration.</p>
+                    <a href="https://github.com/MeansMarkus/MyProject/blob/main/TripPoint.java" target="_blank" class="contact-link">Code on GitHub</a>
                 </div>
+
                 <div class="project-card">
                     <img src="assets/chipengine.jpg" alt="Sequential Arithmetic Chip Engine">
                     <h2>Sequential Arithmetic Chip Engine</h2>
-                    <p>Developed a program to manage and troubleshoot circuit chips performing arithmetic operations.</p>
-                    <a href="https://github.com/MeansMarkus/Chip-Computation/blob/main/project2.cpp" target="_blank" class="contact-link">View here on GitHub</a>
+                    <p>Program to manage and troubleshoot circuit chips performing arithmetic operations, emphasizing debugging strategies and modular design.</p>
+                    <a href="https://github.com/MeansMarkus/Chip-Computation/blob/main/project2.cpp" target="_blank" class="contact-link">Code on GitHub</a>
                 </div>
             </div>
         </section>
     </main>
-    
-</body>
-</html>
+    <footer>
+        <p>© <span id="year"></span> Markus Means. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+ </body>
+ </html>
